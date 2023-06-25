@@ -9,6 +9,8 @@ packages = [{include = "tft_lolsadmemes"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 discord-py = "^2.3.0"
+riotwatcher = "^3.2.5"
+python-dotenv = "^1.0.0"
 
 
 [build-system]
