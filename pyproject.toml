@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tft-lolsadmemes"
+version = "0.1.0"
+description = ""
+authors = ["moonR2 <moonyneverend@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tft_lolsadmemes"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+discord-py = "^2.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
