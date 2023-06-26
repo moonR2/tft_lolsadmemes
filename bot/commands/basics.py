@@ -24,5 +24,40 @@ class Basics(commands.Cog):
         user = await self.bot.fetch_user('548529415055998988')
         await ctx.send(f'{user.mention} es un manco de mierda, no hace falta decir mas.')
 
+    @commands.command()
+    async def gino(self, ctx):
+        user = await self.bot.fetch_user('468960837365661716')
+        await ctx.send(f'{user.mention} es un master del Wildrift y del Ballorant. Lamentablemente no juega TFT ya que dice que es un juego muy fácil para el.')
+
+    @commands.command()
+    async def chesqo(self, ctx):
+        user = await self.bot.fetch_user('566528150826385409')
+        await ctx.send(f'{user.mention} es dueño y amo del servidor, sin él yo no existiera. Entre sus habilidades especiales se encuentra quejarse del lag todo el momento.')
+
+    @commands.command()
+    async def overkill(self, ctx):
+        user = await self.bot.fetch_user('248689889355366400')
+        await ctx.send(f'{user.mention} posiblemente el mejor midlaner del servidor después de Moonify. Le gusta el rammen, el anime, leer y escribir. Cuenta la leyenda que mi primera versión fue creada por él y Moonify, luego se aburrio y me dejo en el abandono.')
+
+    @commands.command()
+    async def jacko(self, ctx):
+        user = await self.bot.fetch_user('250473528485347328')
+        await ctx.send(f'{user.mention} el nuevo amo y dueño del server. Entre sus habilidades esta ser el mejor Swain del mundo y coger aumentos de mierda en el TFT. ')
+
+    @commands.command()
+    async def tevi(self, ctx):
+        user = await self.bot.fetch_user('468961042832293908')
+        await ctx.send(f'{user.mention} de nacionalidad mexicana, es el mejor ADC del servidor. Entre sus habilidades esta echarle la culpa al jungla cuando pierde bot con el Jacko.')
+
+    @commands.command()
+    async def yormom(self, ctx):
+        user = await self.bot.fetch_user('460869447201325056')
+        await ctx.send(f'{user.mention} fancito de T1 de corazón y la mejor poppy de LAN. A ratos le da por trolear jugando Azir mid, al igual que Gino, no juega TFT porque dice que es muy fácil para él :).')
+
+    @commands.command()
+    async def moonify(self, ctx):
+        user = await self.bot.fetch_user('441435704942133249')
+        await ctx.send(f'{user.mention}/mancofy mi amo y creador, con el nada me falta. Entre sus habilidades esta ser el mejor jungla del servidor y el mejor jugador de TFT. Su counter natural es stiwers quien con su juego inpensante deja en jaque a Moonify.')
+
 async def setup(bot):
     await bot.add_cog(Basics(bot))
