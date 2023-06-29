@@ -1,4 +1,3 @@
-# Archivo commands/hello.py
 from discord.ext import commands
 
 class Basics(commands.Cog):
@@ -58,6 +57,16 @@ class Basics(commands.Cog):
     async def moonify(self, ctx):
         user = await self.bot.fetch_user('441435704942133249')
         await ctx.send(f'{user.mention}/mancofy mi amo y creador, con el nada me falta. Entre sus habilidades esta ser el mejor jungla del servidor y el mejor jugador de TFT. Su counter natural es stiwers quien con su juego inpensante deja en jaque a Moonify.')
+
+    @commands.command()
+    async def mishi(self, ctx):
+        user = await self.bot.fetch_user('643117585847549962')
+        await ctx.send(f'{user.mention} es el infame del servidor. Su aporte a la jungla y los cortes de luz durante los clash son invaluables entre los que lo conocen en el servidor.')
+
+    @commands.command()
+    async def karurosu(self, ctx):
+        user = await self.bot.fetch_user('383093792892256256')
+        await ctx.send(f'{user.mention} o mejor dicho el Caluroso, poco a poco se convirtio en el mas mandarina del servidor. Lo cierto es que nos ha dejado a la deriva, pero siempre lo recordaremos por sus frases celebres como: "Coma mierda Pozo".')
 
 async def setup(bot):
     await bot.add_cog(Basics(bot))
