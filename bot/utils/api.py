@@ -1,6 +1,8 @@
 import os
 from riotwatcher import TftWatcher, ApiError 
+from dotenv import load_dotenv
 
+load_dotenv()
 RIOT_API_KEY = os.getenv("RIOT_API_KEY")
 REGION = "la1"
 
@@ -29,6 +31,14 @@ async def get_summoner_data(name: str):
             print(key)
 
         print(response)
+        return response
+
+    except ApiError as err:
+        raise Exception("Summoner not found or API error", err)
+
+async def get_summoner_data_by_id(id: str):
+    try:
+        response = watcher.league.by_summoner(REGION, id)
         return response
 
     except ApiError as err:

@@ -12,6 +12,7 @@ discord-py = "^2.3.0"
 riotwatcher = "^3.2.5"
 python-dotenv = "^1.0.0"
 pymongo = "^4.4.1"
+pandas = "^2.0.3"
 
 
 [build-system]
